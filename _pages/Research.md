@@ -8,7 +8,7 @@ author_profile: true
 
 Published papers
 ======
-[<span style="color:#007CBB">Вербальные интервенции Банка России и структура процентных ставок (In Russian)</span>](http://olegtelegin.github.io/files/1.pdf)  (Verbal interventions of the Bank of Russia and the interest rate structure) (joint with Sergey Merzlyakov)
+[<span style="color:#007CBB">Вербальные интервенции Банка России и структура процентных ставок (In Russian)</span>](http://olegtelegin.github.io/files/Telegin_Oleg_Verbal_Interventions.pdf)  (Verbal interventions of the Bank of Russia and the interest rate structure) (joint with Sergey Merzlyakov)
 > Abstract
 
 Accepted for publication
