@@ -13,10 +13,10 @@ Published papers
 
 Accepted for publication
 ======
-[<span style="color:#007CBB">Регулярные коммуникации Банка России и краткосрочные эффекты волатильности на финансовых рынках (In Russian)</span>](http://olegtelegin.github.io/files/1.pdf) (Bank of Russia regular communications and volatility short-term effects in financial markets)
+[<span style="color:#007CBB">Регулярные коммуникации Банка России и краткосрочные эффекты волатильности на финансовых рынках (In Russian)</span>](http://olegtelegin.github.io/files/Oleg_Telegin_CB_volatility.pdf) (Bank of Russia regular communications and volatility short-term effects in financial markets)
 > Abstract
 
 Work in progress
 ======
-[<span style="color:#007CBB">Формирование Ломбардного списка как искажающий сигнал Банка России (In Russian)</span>](http://olegtelegin.github.io/files/WP2014-01.pdf) (Lombard List formation as a distorting signal of the Bank of Russia)
+[<span style="color:#007CBB">Формирование Ломбардного списка как искажающий сигнал Банка России (In Russian)</span>](http://olegtelegin.github.io/files/Oleg_Telegin_Lombard_List.pdf) (Lombard List formation as a distorting signal of the Bank of Russia)
 > Abstract
