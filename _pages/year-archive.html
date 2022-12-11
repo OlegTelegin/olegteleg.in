@@ -4,3 +4,32 @@ permalink: /year-archive/
 title: "Useful services"
 author_profile: true
 ---
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>XLSX Test</title>
+  </head>
+  <body>
+    <h1>XLSX Test</h1>
+
+    <script src="https://unpkg.com/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+    <script>
+      // Make an HTTP request to the GitHub API to download the Excel file
+      fetch("https://api.github.com/repos/OlegTelegin/olegtelegin.github.io/contents/files/Git1.xlsx")
+        .then(response => response.json())
+        .then(json => {
+          // Parse the Excel file using the xlsx library
+          var data = json.content;
+          var workbook = XLSX.read(data, {type: "base64"});
+
+          // Get the data from the first cell in the first sheet
+          var sheet = workbook.Sheets[workbook.SheetNames[0]];
+          var cell = XLSX.utils.encode_cell({c: 0, r: 0});
+          var value = sheet[cell];
+
+          // Display the data on the page
+          document.write("<p>Cell 1,1: " + value.v + "</p>");
+        });
+    </script>
+  </body>
+</html>
