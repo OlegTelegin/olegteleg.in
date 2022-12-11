@@ -8,46 +8,34 @@ author_profile: true
 <html>
   <head>
     <title>XLSX Test</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.6/xlsx.full.min.js"></script>
   </head>
-  <body onload="readExcelData()">
-    <table>
-      <tr>
-        <td id="cell-1-1">Cell 1</td>
-        <td id="cell-1-2">Cell 2</td>
-      </tr>
-      <tr>
-        <td id="cell-2-1">Cell 3</td>
-        <td id="cell-2-2">Cell 4</td>
-      </tr>
-    </table>
-    <h1>XLSX Test</h1>
-
-    <script src="https://unpkg.com/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <body>
     <script>
-      function readExcelData() {
-      // Make an HTTP request to the GitHub API to download the Excel file
       fetch("https://api.github.com/repos/OlegTelegin/olegtelegin.github.io/contents/files/Git1.xlsx")
-        .then(response => response.text())
-          .then(data => {
-            // When the file has been read, insert the data into the table cells
-            var rows = data.split('\n');
+ .then(response => response.json())
+        .then(json => {
+          var data = json.content;
+          var workbook = XLSX.read(data, {type: "base64"});
+          var sheet = workbook.Sheets[workbook.SheetNames[0]];
 
-            // Loop through the rows and insert the data into the table cells
-            for (var i = 0; i < rows.length; i++) {
-              // Get the current row as an array of cells
-              var cells = rows[i].split(',');
+          // create a new table on the page
+          var table = document.createElement("table");
+          document.body.appendChild(table);
 
-              // Loop through the cells and insert the data into the table
-              for (var j = 0; j < cells.length; j++) {
-                // Get the current cell
-                var cell = document.getElementById('cell-' + (i+1) + '-' + (j+1));
-
-                // Insert the data into the cell
-                cell.innerHTML = cells[j];
-              }
+          // loop through all of the cells in the sheet
+          for (var row = 0; row < 3; row++) {
+            var tr = document.createElement("tr");
+            table.appendChild(tr);
+            for (var col = 0; col < 3; col++) {
+              var cell = XLSX.utils.encode_cell({c: col, r: row});
+              var value = sheet[cell];
+              var td = document.createElement("td");
+              td.innerHTML = value;
+              tr.appendChild(td);
             }
-          });
-      }
+          }
+        });
     </script>
   </body>
 </html>
