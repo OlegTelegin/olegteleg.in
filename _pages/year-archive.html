@@ -1,41 +1,19 @@
 ---
 layout: archive
 permalink: /year-archive/
-title: "Useful services"
+title: "Blog posts"
 author_profile: true
+redirect_from:
+  - /wordpress/blog-posts/
 ---
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>XLSX Test</title>
-  </head>
-  <body>
-    <h1>XLSX Test</h1>
 
-    <script src="https://unpkg.com/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-    <script>
-      // Make an HTTP request to the GitHub API to download the Excel file
-      console.log("Making HTTP request to GitHub API to download Excel file");
-      fetch("https://api.github.com/repos/OlegTelegin/olegtelegin.github.io/contents/files/Git1.xlsx")
-        .then(response => {
-          console.log("Received response from GitHub API");
-          return response.json();
-        })
-        .then(json => {
-          console.log("Parsing Excel file with xlsx library");
-
-          // Parse the Excel file using the xlsx library
-          var data = json.content;
-          var workbook = XLSX.read(data, {type: "base64"});
-
-          // Get the data from the first cell in the first sheet
-          var sheet = workbook.Sheets[workbook.SheetNames[0]];
-          var cell = XLSX.utils.encode_cell({c: 0, r: 0});
-          var value = sheet[cell];
-// Display the data on the page
-          console.log("Displaying data from cell 1,1 on page");
-          document.write("<p>Cell 1,1: " + value.v + "</p>");
-        });
-    </script>
-  </body>
-</html>
+{% include base_path %}
+{% capture written_year %}'None'{% endcapture %}
+{% for post in site.posts %}
+  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+  {% if year != written_year %}
+    <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
+    {% capture written_year %}{{ year }}{% endcapture %}
+  {% endif %}
+  {% include archive-single.html %}
+{% endfor %}
