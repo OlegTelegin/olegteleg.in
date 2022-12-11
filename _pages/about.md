@@ -8,7 +8,8 @@ redirect_from:
   - /about.html
 ---
 
-I am an intern researcher at the International Laboratory for Macroeconomic Analisys (HSE, Moscow).
+![Pic1](images/Pic1.png)
+I am an intern researcher at the International Laboratory for Macroeconomic Analisys and lecturer in the Department of Theoretical Economics (HSE, Moscow).
 
 I am an economist with research interest at the intersection of monetary economics and information economics currently working on central bank communication from both a theoretical and empirical perspective.
 
