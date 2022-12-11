@@ -9,27 +9,45 @@ author_profile: true
   <head>
     <title>XLSX Test</title>
   </head>
-  <body>
+  <body onload="readExcelData()">
+    <table>
+      <tr>
+        <td id="cell-1-1">Cell 1</td>
+        <td id="cell-1-2">Cell 2</td>
+      </tr>
+      <tr>
+        <td id="cell-2-1">Cell 3</td>
+        <td id="cell-2-2">Cell 4</td>
+      </tr>
+    </table>
     <h1>XLSX Test</h1>
 
     <script src="https://unpkg.com/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
     <script>
+      function readExcelData() {
       // Make an HTTP request to the GitHub API to download the Excel file
       fetch("https://api.github.com/repos/OlegTelegin/olegtelegin.github.io/contents/files/Git1.xlsx")
-        .then(response => response.json())
-        .then(json => {
-          // Parse the Excel file using the xlsx library
-          var data = json.content;
-          var workbook = XLSX.read(data, {type: "base64"});
+        .then(response => response.text())
+          .then(data => {
+            // When the file has been read, insert the data into the table cells
+            var rows = data.split('\n');
 
-          // Get the data from the first cell in the first sheet
-          var sheet = workbook.Sheets[workbook.SheetNames[0]];
-          var cell = XLSX.utils.encode_cell({c: 0, r: 0});
-          var value = sheet[cell];
+            // Loop through the rows and insert the data into the table cells
+            for (var i = 0; i < rows.length; i++) {
+              // Get the current row as an array of cells
+              var cells = rows[i].split(',');
 
-          // Display the data on the page
-          document.write("<p>Cell 1,1: " + value.v + "</p>");
-        });
+              // Loop through the cells and insert the data into the table
+              for (var j = 0; j < cells.length; j++) {
+                // Get the current cell
+                var cell = document.getElementById('cell-' + (i+1) + '-' + (j+1));
+
+                // Insert the data into the cell
+                cell.innerHTML = cells[j];
+              }
+            }
+          });
+      }
     </script>
   </body>
 </html>
