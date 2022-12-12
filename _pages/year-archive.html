@@ -20,7 +20,7 @@ author_profile: true
           var workbook = XLSX.read(data, {type: "base64"});
           var sheet = workbook.Sheets[workbook.SheetNames[0]];
           var table = document.createElement("table");
-        table.style = "position:absolute; top:300px; left:300px; width:500px";
+        table.style = "position:absolute; top:300px; left:300px; width:1000px";
           document.body.appendChild(table);
           for (var row = 0; row < 15; row++) {
             var tr = document.createElement("tr");
