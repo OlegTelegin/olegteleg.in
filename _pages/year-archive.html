@@ -13,7 +13,7 @@ author_profile: true
   </head>
   <body>
     <script>
-      fetch("https://api.github.com/repos/OlegTelegin/olegtelegin.github.io/contents/files/Git1.xlsx")
+      fetch("https://api.github.com/repos/OlegTelegin/olegtelegin.github.io/contents/files/Far away from Macro.xlsx")
         .then(response => response.json())
         .then(json => {
           var data = json.content;
@@ -22,10 +22,10 @@ author_profile: true
           var table = document.createElement("table");
         table.style = "position:absolute; top:300px; left:300px; width:500px";
           document.body.appendChild(table);
-          for (var row = 0; row < 2; row++) {
+          for (var row = 0; row < 15; row++) {
             var tr = document.createElement("tr");
             table.appendChild(tr);
-            for (var col = 0; col < 2; col++) {
+            for (var col = 0; col < 6; col++) {
               var cell = XLSX.utils.encode_cell({c: col, r: row});
               var value = sheet[cell].v;
               var td = document.createElement("td");
