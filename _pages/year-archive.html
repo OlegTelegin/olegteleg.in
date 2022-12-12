@@ -16,20 +16,31 @@ author_profile: true
         .then(response => response.json())
         .then(json => {
           var data = json.content;
+console.log("1");
           var workbook = XLSX.read(data, {type: "base64"});
+console.log("2");
           var sheet = workbook.Sheets[workbook.SheetNames[0]];
+console.log("3");
           // create a new table on the page
           var table = document.createElement("table");
+console.log("4");
           document.body.appendChild(table);
+console.log("5");
           // loop through all of the cells in the sheet
           for (var row = 0; row < 2; row++) {
             var tr = document.createElement("tr");
+console.log("6");
             table.appendChild(tr);
+console.log("7");
             for (var col = 0; col < 2; col++) {
               var cell = XLSX.utils.encode_cell({c: col, r: row});
+console.log("8");
               var value = sheet[cell].v;
+console.log("9");
               var td = document.createElement("td");
+console.log("10");
               td.innerHTML = value;
+console.log("11");
               tr.appendChild(td);
             }
           }
