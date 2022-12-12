@@ -20,9 +20,9 @@ author_profile: true
           var workbook = XLSX.read(data, {type: "base64"});
           var sheet = workbook.Sheets[workbook.SheetNames[0]];
           var table = document.createElement("table");
-        table.style = "position:absolute; top:300px; left:300px; width:800px; height: 500px";
+        table.style = "position:absolute; top:300px; left:300px; width:800px; height: 300px";
           document.body.appendChild(table);
-          for (var row = 0; row < 7; row++) {
+          for (var row = 0; row < 5; row++) {
             var tr = document.createElement("tr");
             table.appendChild(tr);
             for (var col = 0; col < 6; col++) {
@@ -35,5 +35,6 @@ author_profile: true
           }
         });
     </script>
+    Something else
   </body>
 </html>
