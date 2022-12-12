@@ -13,6 +13,10 @@ author_profile: true
     </script>
   </head>
   <body>
+    <script type="text/javascript">
+jQuery( window ).load(function(){
+    jQuery( window ).trigger( 'resize' );
+});</script>
     <script>
       fetch("https://api.github.com/repos/OlegTelegin/olegtelegin.github.io/contents/files/Git1.xlsx")
         .then(response => response.json())
