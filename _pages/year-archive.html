@@ -20,6 +20,7 @@ author_profile: true
           var workbook = XLSX.read(data, {type: "base64"});
           var sheet = workbook.Sheets[workbook.SheetNames[0]];
           var table = document.createElement("table");
+        console.log(sheet);
         table.style = "position:absolute; top:150px; left:300px; width:800px; height: 400px";
           document.body.appendChild(table);
           for (var row = 0; row < 6; row++) {
