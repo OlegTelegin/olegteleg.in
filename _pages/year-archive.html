@@ -29,8 +29,8 @@ author_profile: true
     var sheet = workbook.Sheets[workbook.SheetNames[0]];
     var table = document.createElement("table");
     table.style.position = "absolute";
-    table.style.top = "150px";
-    table.style.left = "200px";
+    table.style.top = "170px";
+    table.style.left = "215px";
     document.body.appendChild(table);
     for (var row = 0; row < 7; row++) {
       var tr = document.createElement("tr");
@@ -46,13 +46,13 @@ author_profile: true
           } else if (col == 1) {
             td.style.width = "30px";
           } else if (col == 2) {
-            td.style.width = "20px";
+            td.style.width = "25px";
           } else if (col == 3) {
             td.style.width = "100px";
           } else if (col == 4) {
-            td.style.width = "140px";
-          } else {
             td.style.width = "130px";
+          } else {
+            td.style.width = "800px";
           }
           td.classList.add("wrapped-cell");
           tr.appendChild(td);
