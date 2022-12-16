@@ -20,6 +20,9 @@ author_profile: true
     var workbook = XLSX.read(data, {type: "base64"});
     var sheet = workbook.Sheets[workbook.SheetNames[0]];
     var table = document.createElement("table");
+    table.style.position = "absolute";
+    table.style.top = "150px";
+    table.style.left = "200px";
     document.body.appendChild(table);
     for (var row = 0; row < 5; row++) {
       var tr = document.createElement("tr");
@@ -31,11 +34,11 @@ author_profile: true
           var td = document.createElement("td");
           td.innerHTML = value;
           if (col == 0) {
-            td.style.width = "50px";
+            td.style.width = "30px";
           } else if (col == 1) {
-            td.style.width = "75px";
+            td.style.width = "45px";
           } else {
-            td.style.width = "100px";
+            td.style.width = "70px";
           }
           tr.appendChild(td);
         }
