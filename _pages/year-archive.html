@@ -24,7 +24,7 @@ author_profile: true
     table.style.top = "150px";
     table.style.left = "200px";
     document.body.appendChild(table);
-    for (var row = 0; row < 5; row++) {
+    for (var row = 0; row < 7; row++) {
       var tr = document.createElement("tr");
       table.appendChild(tr);
       for (var col = 0; col < 6; col++) {
@@ -33,6 +33,10 @@ author_profile: true
           var value = sheet[cell].v;
           var td = document.createElement("td");
           td.innerHTML = value;
+          .wrapped-cell {
+  word-wrap: break-word;
+}
+          td.classList.add("wrapped-cell");
           if (col == 0) {
             td.style.width = "20px";
           } else if (col == 1) {
