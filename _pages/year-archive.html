@@ -15,36 +15,33 @@ author_profile: true
     <script>
       fetch("https://api.github.com/repos/OlegTelegin/olegtelegin.github.io/contents/files/Far away from Macro.xlsx")
         .then(response => response.json())
-        .then(json => {
-          var data = json.content;
-          var workbook = XLSX.read(data, {type: "base64"});
-          var sheet = workbook.Sheets[workbook.SheetNames[0]];
-          var table = document.createElement("table");
-        console.log(sheet);
-        table.style = "position:absolute; top:150px; left:300px; width:800px; height: 400px";
-          document.body.appendChild(table);
-          for (var row = 0; row < 6; row++) {
-            var tr = document.createElement("tr");
-            console.log("row");
-            table.appendChild(tr);
-            for (var col = 0; col < 6; col++) {
-              var cell = XLSX.utils.encode_cell({c: col, r: row});
-              if (sheet[cell] && sheet[cell].v) {
-              var value = sheet[cell].v;
-              var td = document.createElement("td");
-              td.innerHTML = value;
-                 if (col == 0) {
-        td.style.width = "30px";
-      } else if (col == 1) {
-        td.style.width = "45px";
-      } else {
-        td.style.width = "80px";
-      }
-              tr.appendChild(td);
-              }
-            }
+  .then(json => {
+    var data = json.content;
+    var workbook = XLSX.read(data, {type: "base64"});
+    var sheet = workbook.Sheets[workbook.SheetNames[0]];
+    var table = document.createElement("table");
+    document.body.appendChild(table);
+    for (var row = 0; row < 5; row++) {
+      var tr = document.createElement("tr");
+      table.appendChild(tr);
+      for (var col = 0; col < 6; col++) {
+        var cell = XLSX.utils.encode_cell({c: col, r: row});
+        if (sheet[cell] && sheet[cell].v) {
+          var value = sheet[cell].v;
+          var td = document.createElement("td");
+          td.innerHTML = value;
+          if (col == 0) {
+            td.style.width = "50px";
+          } else if (col == 1) {
+            td.style.width = "75px";
+          } else {
+            td.style.width = "100px";
           }
-        });
+          tr.appendChild(td);
+        }
+      }
+    }
+  });
     </script>
     Something else
   </body>
