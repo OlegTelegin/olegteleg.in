@@ -33,6 +33,13 @@ author_profile: true
               var value = sheet[cell].v;
               var td = document.createElement("td");
               td.innerHTML = value;
+                 if (col == 0) {
+        td.style.width = "30px";
+      } else if (col == 1) {
+        td.style.width = "45px";
+      } else {
+        td.style.width = "800px";
+      }
               tr.appendChild(td);
               }
             }
