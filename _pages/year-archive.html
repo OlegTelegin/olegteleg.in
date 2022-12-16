@@ -61,6 +61,17 @@ author_profile: true
       }
     }
   });
+      const kells = document.querySelectorAll('td');
+for (const kell of kells) {
+  const kellValue = kell.textContent;
+  if (kellValue.startsWith('http')) {
+    const anchor = document.createElement('a');
+    anchor.href = kellValue;
+    anchor.textContent = kellValue;
+    kell.textContent = '';
+    kell.appendChild(anchor);
+  }
+}
     </script>
     <br>
     <br>
