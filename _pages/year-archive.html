@@ -63,20 +63,24 @@ author_profile: true
   });
       </script>
     <script>
-     const cells = document.querySelectorAll('td');
-      console.log("1");
+      const cells = document.querySelectorAll('td');
+console.log("1");
 for (const cell of cells) {
   const cellValue = cell.textContent;
-  console.log("2");
-  if (cellValue.startsWith('http')) {
-    const anchor = document.createElement('a');
+console.log("2");
+  if (cellValue === '') {
+    continue;
     console.log("3");
+  }
+  if (cellValue.startsWith('https')) {
+    const anchor = document.createElement('a');
+console.log("4");
     anchor.href = cellValue;
-    console.log("4");
+console.log("5");
     anchor.textContent = cellValue;
-    console.log("5");
+console.log("6");
     cell.textContent = '';
-    console.log("6");
+    console.log("7");
     cell.appendChild(anchor);
   }
 }
