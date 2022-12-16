@@ -22,10 +22,10 @@ author_profile: true
           var table = document.createElement("table");
         table.style = "position:absolute; top:150px; left:300px; width:800px; height: 400px";
           document.body.appendChild(table);
-          for (var row = 0; row < 5; row++) {
+          for (var row = 1; row < 6; row++) {
             var tr = document.createElement("tr");
             table.appendChild(tr);
-            for (var col = 0; col < 6; col++) {
+            for (var col = 1; col < 6; col++) {
               var cell = XLSX.utils.encode_cell({c: col, r: row});
               var value = sheet[cell].v;
               var td = document.createElement("td");
