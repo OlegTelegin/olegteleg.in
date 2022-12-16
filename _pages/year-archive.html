@@ -48,6 +48,7 @@ Week 12.12.22 - 18.12.22<br>
         var cell = XLSX.utils.encode_cell({c: col, r: row});
         if (sheet[cell] && sheet[cell].v) {
           var value = sheet[cell].v;
+		const kells = [];
           var td = document.createElement("td");
           td.innerHTML = value;
           if (col == 0) {
@@ -64,30 +65,30 @@ Week 12.12.22 - 18.12.22<br>
             td.style.width = "40px";
           }
           td.classList.add("wrapped-cell");
+		kells.push(td);
           tr.appendChild(td);
         }
       }
     }
   });
-      const cells = document.querySelectorAll('td');
-console.log(cells);
-for (const cell of cells) {
-  const cellValue = cell.textContent;
+console.log(kells);
+for (const kell of kells) {
+  const kellValue = kell.textContent;
 console.log("2");
-  if (cellValue === '') {
+  if (kellValue === '') {
     continue;
     console.log("3");
   }
-  if (cellValue.startsWith('https')) {
+  if (kellValue.startsWith('https')) {
     const anchor = document.createElement('a');
 console.log("4");
-    anchor.href = cellValue;
+    anchor.href = kellValue;
 console.log("5");
-    anchor.textContent = cellValue;
+    anchor.textContent = kellValue;
 console.log("6");
-    cell.textContent = '';
+    kell.textContent = '';
     console.log("7");
-    cell.appendChild(anchor);
+    kell.appendChild(anchor);
   }
 }
     </script>
