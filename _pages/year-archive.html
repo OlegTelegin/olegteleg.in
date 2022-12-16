@@ -38,7 +38,6 @@ author_profile: true
           var value = sheet[cell].v;
           var td = document.createElement("td");
           td.innerHTML = value;
-          td.classList.add("wrapped-cell");
           if (col == 0) {
             td.style.width = "20px";
           } else if (col == 1) {
@@ -52,6 +51,7 @@ author_profile: true
           } else {
             td.style.width = "130px";
           }
+          td.classList.add("wrapped-cell");
           tr.appendChild(td);
         }
       }
