@@ -29,11 +29,12 @@ author_profile: true
             table.appendChild(tr);
             for (var col = 0; col < 6; col++) {
               var cell = XLSX.utils.encode_cell({c: col, r: row});
-              console.log("col");
+              if (sheet[cell] && sheet[cell].v) {
               var value = sheet[cell].v;
               var td = document.createElement("td");
               td.innerHTML = value;
               tr.appendChild(td);
+              }
             }
           }
         });
