@@ -70,23 +70,16 @@ Week 12.12.22 - 18.12.22<br>
         }
       }
     }
-console.log(cells);
 for (const cell of cells) {
   const cellValue = cell.textContent;
-console.log("2");
   if (cellValue === '') {
     continue;
-    console.log("3");
   }
   if (cellValue.startsWith('https')) {
     const anchor = document.createElement('a');
-console.log("4");
     anchor.href = cellValue;
-console.log("5");
     anchor.textContent = cellValue;
-console.log("6");
     cell.textContent = '';
-    console.log("7");
     cell.appendChild(anchor);
   }
 }
