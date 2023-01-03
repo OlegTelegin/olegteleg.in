@@ -36,11 +36,10 @@ Here you may find various online seminars and conferences on macroeconomics, foc
     var workbook = XLSX.read(data, {type: "base64"});
     var sheet = workbook.Sheets[workbook.SheetNames[0]];
     var table = document.createElement("table");
-    table.style.position = "absolute";
-    table.style.top = "470px";
-    table.style.left = "240px";
+    table.style.position = "relative";
     table.style.width = "1000px";
-    document.body.appendChild(table);
+    var tableHTML = table.outerHTML;
+      document.body.insertAdjacentHTML("beforeend", tableHTML);
     const cells = [];
     for (var row = 0; row < 2; row++) {
       var tr = document.createElement("tr");
@@ -85,12 +84,16 @@ for (const cell of cells) {
 }
 });
     </script>
+	  	      <br>
+    <br>
+    <br>
+    <br>
+	  <table style="position: relative; width: 1000px;">
     <br>
     <br>
     <br>
     <br>
     <br>
-	  document.body.appendChild(table);
     <br>
     <br>
     <br>
