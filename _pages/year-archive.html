@@ -218,9 +218,6 @@ for (const cell of cells) {
       var table2 = document.createElement("table");
       table2.style.position = "relative";
       table2.style.width = "1000px";
-      var tableHTML2 = table2.outerHTML;
-      var pointB = document.getElementById("pointB");
-      pointB.insertAdjacentHTML("beforebegin", tableHTML2);
       const cells2 = [];
       for (var row = 0; row < 7; row++) {
         var tr = document.createElement("tr");
@@ -263,6 +260,9 @@ for (const cell of cells) {
           cell.appendChild(anchor);
         }
       }
+	  var tableHTML2 = table2.outerHTML;
+          var pointB = document.getElementById("pointB");
+          pointB.insertAdjacentHTML("beforebegin", tableHTML2);
     });
 </script>
     <br>
