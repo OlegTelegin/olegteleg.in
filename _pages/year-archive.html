@@ -85,10 +85,6 @@ Here you may find various online seminars and conferences on macroeconomics, foc
       }
     });
 </script>
-	  	      <br>
-    <br>
-    <br>
-    <br>
     <br>
     <br>
     <br>
@@ -189,6 +185,133 @@ for (const cell of cells) {
     <br>
     <br>
     <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+	  <script>
+  fetch("https://api.github.com/repos/OlegTelegin/olegtelegin.github.io/contents/files/Far away from Macro.xlsx")
+    .then(response => response.json())
+    .then(json => {
+      var data = json.content;
+      var workbook = XLSX.read(data, {type: "base64"});
+      var sheet = workbook.Sheets[workbook.SheetNames[1]];
+      var table1 = document.createElement("table");
+      table1.style.position = "relative";
+      table1.style.width = "1000px";
+      var tableHTML1 = table1.outerHTML;
+      var pointA = document.getElementById("pointA");
+      pointA.insertAdjacentHTML("beforebegin", tableHTML1);
+      const cells1 = [];
+      for (var row = 0; row < 7; row++) {
+        var tr = document.createElement("tr");
+        table1.appendChild(tr);
+        for (var col = 0; col < 6; col++) {
+          var cell = XLSX.utils.encode_cell({c: col, r: row});
+          if (sheet[cell] && sheet[cell].v) {
+            var value = sheet[cell].v;
+            var td = document.createElement("td");
+            td.innerHTML = value;
+            if (col == 0) {
+              td.style.width = "15px";
+            } else if (col == 1) {
+              td.style.width = "20px";
+            } else if (col == 2) {
+              td.style.width = "15px";
+            } else if (col == 3) {
+              td.style.width = "60px";
+            } else if (col == 4) {
+              td.style.width = "60px";
+		    } else {
+              td.style.width = "40px";
+            }
+            td.classList.add("wrapped-cell");
+            cells1.push(td);
+            tr.appendChild(td);
+          }
+        }
+      }
+      for (const cell of cells1) {
+        const cellValue = cell.textContent;
+        if (cellValue === '') {
+          continue;
+        }
+        if (cellValue.startsWith('http')) {
+          const anchor = document.createElement('a');
+          anchor.href = cellValue;
+          anchor.textContent = cellValue;
+          cell.textContent = '';
+          cell.appendChild(anchor);
+        }
+      }
+      var table2 = document.createElement("table");
+      table2.style.position = "relative";
+      table2.style.width = "1000px";
+      var tableHTML2 = table2.outerHTML;
+      var pointB = document.getElementById("pointB");
+      pointB.insertAdjacentHTML("beforebegin", tableHTML2);
+      const cells2 = [];
+      for (var row = 0; row < 7; row++) {
+        var tr = document.createElement("tr");
+        table2.appendChild(tr);
+        for (var col = 0; col < 6; col++) {
+          var cell = XLSX.utils.encode_cell({c: col, r: row});
+          if (sheet[cell] && sheet[cell].v) {
+            var value = sheet[cell].v;
+            var td = document.createElement("td");
+            td.innerHTML = value;
+            if (col == 0) {
+	       td.style.width = "15px";
+            } else if (col == 1) {
+              td.style.width = "20px";
+            } else if (col == 2) {
+              td.style.width = "15px";
+            } else if (col == 3) {
+              td.style.width = "60px";
+            } else if (col == 4) {
+              td.style.width = "60px";
+            } else {
+              td.style.width = "40px";
+            }
+            td.classList.add("wrapped-cell");
+            cells2.push(td);
+            tr.appendChild(td);
+          }
+        }
+      }
+      for (const cell of cells2) {
+        const cellValue = cell.textContent;
+        if (cellValue === '') {
+          continue;
+        }
+        if (cellValue.startsWith('http')) {
+          const anchor = document.createElement('a');
+          anchor.href = cellValue;
+          anchor.textContent = cellValue;
+          cell.textContent = '';
+          cell.appendChild(anchor);
+        }
+      }
+    });
+</script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+	  <div id="pointB">pointB</div>
     <br>
     <br>
   </body>
