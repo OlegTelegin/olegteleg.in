@@ -34,7 +34,7 @@ Here you may find various online seminars and conferences on macroeconomics, foc
     .then(json => {
       var data = json.content;
       var workbook = XLSX.read(data, {type: "base64"});
-      var sheet = workbook.Sheets[workbook.SheetNames[1]];
+      var sheet = workbook.Sheets[workbook.SheetNames[0]];
       var table = document.createElement("table");
     table.style.position = "absolute";
     table.style.top = "470px";
@@ -42,7 +42,7 @@ Here you may find various online seminars and conferences on macroeconomics, foc
     table.style.width = "1000px";
     document.body.appendChild(table);
       const cells = [];
-      for (var row = 0; row < 7; row++) {
+      for (var row = 0; row < 2; row++) {
         var tr = document.createElement("tr");
         table.appendChild(tr);
         for (var col = 0; col < 6; col++) {
