@@ -126,7 +126,7 @@ Here you may find various online seminars and conferences on macroeconomics, foc
             } else if (col == 2) {
               td.style.width = "15px";
             } else if (col == 3) {
-              td.style.width = "60px";
+              td.style.width = "40px";
             } else if (col == 4) {
               td.style.width = "60px";
             } else {
@@ -173,40 +173,65 @@ Here you may find various online seminars and conferences on macroeconomics, foc
     <br>
     <br>
     <br>
+	  	  <div id="pointA"></div>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+	  	  <script>
+  fetch("https://api.github.com/repos/OlegTelegin/olegtelegin.github.io/contents/files/Far away from Macro.xlsx")
+    .then(response => response.json())
+    .then(json => {
+      var data = json.content;
+      var workbook = XLSX.read(data, {type: "base64"});
+      var sheet = workbook.Sheets[workbook.SheetNames[0]];
+      var table = document.createElement("table");
+      table.style.position = "relative";
+      table.style.width = "1000px";
+      const cells = [];
+      for (var row = 0; row < 3; row++) {
+        var tr = document.createElement("tr");
+        table.appendChild(tr);
+        for (var col = 0; col < 6; col++) {
+          var cell = XLSX.utils.encode_cell({c: col, r: row});
+          if (sheet[cell] && sheet[cell].v) {
+            var value = sheet[cell].v;
+            var td = document.createElement("td");
+            td.innerHTML = value;
+            if (col == 0) {
+	       td.style.width = "15px";
+            } else if (col == 1) {
+              td.style.width = "20px";
+            } else if (col == 2) {
+              td.style.width = "15px";
+            } else if (col == 3) {
+              td.style.width = "40px";
+            } else if (col == 4) {
+              td.style.width = "60px";
+            } else {
+              td.style.width = "40px";
+            }
+            td.classList.add("wrapped-cell");
+            cells.push(td);
+            tr.appendChild(td);
+          }
+        }
+      }
+      for (const cell of cells) {
+        const cellValue = cell.textContent;
+        if (cellValue === '') {
+          continue;
+        }
+        if (cellValue.startsWith('http')) {
+          const anchor = document.createElement('a');
+          anchor.href = cellValue;
+          anchor.textContent = cellValue;
+          cell.textContent = '';
+          cell.appendChild(anchor);
+        }
+      }
+	  var tableHTML = table.outerHTML;
+          var pointA = document.getElementById("pointA");
+          pointA.insertAdjacentHTML("beforebegin", tableHTML);
+    });
+</script>
     <br>
   </body>
 </html>
