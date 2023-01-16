@@ -25,16 +25,16 @@ Work experience
   * Higher School of Economics
   * Supervisor: Sergei Merzlyakov
 
+<!---
 Skills
 ======
 
 Publications
 ======
   <ul>{% for post in site.publications %}
-    {% include research.html %}
+    {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-<!---
 Talks
 ======
   <ul>{% for post in site.talks %}
