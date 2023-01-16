@@ -16,4 +16,4 @@ Montenegro, Bar
 otelegin@hse.ru
 
 ## Mobile ##
-+ 7 985 445 23 50
++ + 7 985 445 23 50
