@@ -13,7 +13,7 @@ redirect_from:
 Montenegro, Bar
 
 ## Email address ##
-otelegin@hse.ru
+oleginerr@gmail.com
 
 ## Mobile ##
 \+ 7 985 445 23 50
