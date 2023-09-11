@@ -6,7 +6,7 @@ author_profile: true
 ---
 Work in progress
 ======
-[<span style="color:#007CBB">Always silent? Endogenous central bank communication during the quiet period: a model of managing uncertainty and financial market fluctuations</span>](http://olegtelegin.github.io/files/Oleg Telegi - Quiet Period.pdf) 
+[<span style="color:#007CBB">Always silent? Endogenous central bank communication during the quiet period: a model of managing uncertainty and financial market fluctuations</span>](http://olegtelegin.github.io/files/Oleg Telegin - Quiet Period.pdf) 
 
 Published papers
 ======
