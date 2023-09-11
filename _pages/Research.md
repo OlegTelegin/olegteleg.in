@@ -4,8 +4,9 @@ title: "Research"
 permalink: /research/
 author_profile: true
 ---
-
-Suddenly (for slowpokes), almost the entire economics is in English, and all my publications are in Russian. I'm working on it.
+Work in progress
+======
+[<span style="color:#007CBB">Always silent? Endogenous central bank communication during the quiet period: a model of managing uncertainty and financial market fluctuations</span>](http://olegtelegin.github.io/files/Telegin_Oleg_Verbal_Interventions.pdf) 
 
 Published papers
 ======
@@ -23,6 +24,4 @@ Published papers
 Accepted for publication
 ======
 
-Work in progress
-======
 
