@@ -8,10 +8,13 @@ Work in progress
 ======
 [<span style="color:#007CBB">Always silent? Endogenous central bank communication during the quiet period: a model of managing uncertainty and financial market fluctuations</span>](http://olegtelegin.github.io/files/Oleg Telegin - Quiet Period.pdf) 
 
+<br>
+<br>
+
 Published papers
 ======
 I have three published articles. All of them are in Russian. Considering that almost no one will read them, I briefly describe them in a few sentences.
-<br>
+
 <br>
 <br>
 
@@ -26,7 +29,7 @@ I have three published articles. All of them are in Russian. Considering that al
 
 <br>
 <br>
-<br>
+
 [<span style="color:#007CBB">Вербальные интервенции Банка России и структура процентных ставок (In Russian)</span>](http://olegtelegin.github.io/files/Telegin_Oleg_Verbal_Interventions.pdf)  (Verbal interventions of the Bank of Russia and the interest rate structure) (joint with Sergey Merzlyakov) http://doi.org/10.31063/2073-6517/2019.16-4.5
 > Data from all informal communications of the Bank of Russia during the transition to inflation targeting regime with manually labeled topics and tones. The transition to inflation targeting enhances the zero coupon yield curve response to communications. Different topics affect different parts of the curve. This article has a small unpublished follow-up work in English (I will add it here soon). Markets are more likely to react to the Governor's communications than other Board members. For Deputy Governors, interest rates mainly respond to statements on issues that fall within the scope of their direct responsibilities at the Bank of Russia.
 
