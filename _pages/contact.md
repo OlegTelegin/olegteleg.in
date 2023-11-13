@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 
-## Mailing address ##
+## Address ##
 Montenegro, Bar
 
 ## Email address ##
