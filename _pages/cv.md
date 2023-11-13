@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+<iframe src="https://olegtelegin.github.io/files/Oleg_Telegin_CV.pdf" width="100%" height="600px"></iframe>
+
 Education
 ======
 * B.S. in Mathematics, Higher School of Economics, 2014
