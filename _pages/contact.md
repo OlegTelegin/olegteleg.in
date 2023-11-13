@@ -16,4 +16,5 @@ Montenegro, Bar
 oleginerr@gmail.com
 
 ## Mobile ##
-\+ 7 985 445 23 50
+\+ 7 985 445 23 50 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (WhatsApp, Telegram)
+\+ 382 68 457 211 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Phone)
