@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-[<span style="color:#007CBB">Link</span>](http://olegtelegin.github.io/files/Oleg_Telegin_CV.pdf) 
+[<span style="color:#007CBB">Link to pdf</span>](http://olegtelegin.github.io/files/Oleg_Telegin_CV.pdf) 
 <iframe src="https://olegtelegin.github.io/files/Oleg_Telegin_CV.pdf" width="100%" height="600px"></iframe>
 
 [//]: # (Education)
