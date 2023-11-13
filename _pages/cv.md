@@ -11,11 +11,11 @@ redirect_from:
 
 <iframe src="https://olegtelegin.github.io/files/Oleg_Telegin_CV.pdf" width="100%" height="600px"></iframe>
 
-Education
-======
-* B.S. in Mathematics, Higher School of Economics, 2014
-* M.S. in Economics, Higher School of Economics, 2017
-* Ph.D in Economics, Higher School of Economics, 2023 (expected)
+[//]: # (Education)
+[//]: # (======)
+[//]: # (* B.S. in Mathematics, Higher School of Economics, 2014)
+[//]: # (* M.S. in Economics, Higher School of Economics, 2017)
+[//]: # (* Ph.D in Economics, Higher School of Economics, 2023 (expected))
 
 Work experience
 ======
