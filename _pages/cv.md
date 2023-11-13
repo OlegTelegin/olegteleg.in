@@ -17,15 +17,15 @@ redirect_from:
 [//]: # (* M.S. in Economics, Higher School of Economics, 2017)
 [//]: # (* Ph.D in Economics, Higher School of Economics, 2023 (expected))
 
-Work experience
-======
-* Autumn 2019 - Winter 2022: Assistant
-  * Higher School of Economics
-  * Supervisor: Sergei Merzlyakov
+[//]: # (Work experience)
+[//]: # (======)
+[//]: # (* Autumn 2019 - Winter 2022: Assistant)
+[//]: # ( * Higher School of Economics)
+[//]: # ( * Supervisor: Sergei Merzlyakov)
 
-* Spring 2022 - : Lecturer
-  * Higher School of Economics
-  * Supervisor: Sergei Merzlyakov
+[//]: # (* Spring 2022 - : Lecturer)
+[//]: # ( * Higher School of Economics)
+[//]: # ( * Supervisor: Sergei Merzlyakov)
 
 <!---
 Skills
