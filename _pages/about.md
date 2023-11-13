@@ -10,6 +10,9 @@ redirect_from:
 
 ![Pic1](images/Pic1.png)
 <br>
+<br>
+<br>
+<br>
 &nbsp;&nbsp;&nbsp; I am a PhD candidate at the Higher School of Economics under the supervision of Sergey Merzlyakov.
 
 &nbsp;&nbsp;&nbsp; I am an economist with research interests at the intersection of monetary and information economics, currently working on central bank communication from both theoretical and empirical perspectives.
