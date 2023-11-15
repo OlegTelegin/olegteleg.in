@@ -17,7 +17,7 @@ Work in progress
 
 Published papers
 ======
-I have three published articles. All of them are in Russian. Considering that almost no one can read them, I briefly describe them in a few sentences below.
+I have three published papers. All of them are in Russian. Considering that almost no one can read them, I briefly describe them in a few sentences below.
 
 <br>
 <br>
