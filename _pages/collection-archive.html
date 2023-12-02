@@ -5,20 +5,23 @@ permalink: /collection-archive/
 author_profile: true
 ---
 
-{% include base_path %}
-{% capture written_label %}'None'{% endcapture %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATLAB HTML Viewer</title>
+    <style>
+        #matlabFrame {
+            width: 100%;
+            height: 400px; /* Set the desired height */
+            border: 1px solid #ccc; /* Optional: Add a border for styling */
+        }
+    </style>
+</head>
+<body>
 
-{% for collection in site.collections %}
-  {% unless collection.output == false or collection.label == "posts" %}
-    {% capture label %}{{ collection.label }}{% endcapture %}
-    {% if label != written_label %}
-      <h2 id="{{ label | slugify }}" class="archive__subtitle">{{ label }}</h2>
-      {% capture written_label %}{{ label }}{% endcapture %}
-    {% endif %}
-  {% endunless %}
-  {% for post in collection.docs %}
-    {% unless collection.output == false or collection.label == "posts" %}
-      {% include archive-single.html %}
-    {% endunless %}
-  {% endfor %}
-{% endfor %}
+<iframe id="matlabFrame" src="files/Oleg_Telegin_Code_Sample_1.html" scrolling="auto"></iframe>
+
+</body>
+</html>
