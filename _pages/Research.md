@@ -14,7 +14,7 @@ Work in progress
 
 Published papers
 ======
-I have three published papers in Russian. Recognizing that their accessibility might be limited, I offer a succinct summary of each below.
+I have three published papers in Russian. Recognizing that their accessibility might be limited, I offer a succinct, shorter-than-abstract summary of each below.
 
 <br>
 <br>
