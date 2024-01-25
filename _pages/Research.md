@@ -37,5 +37,17 @@ I have three published papers in Russian. Recognizing that their accessibility m
 [<span style="color:#007CBB">Verbal interventions of the Bank of Russia and the interest rate structure, joint with Sergey Merzlyakov (In Russian)</span>](https://olegtelegin.github.io/files/Telegin_Oleg_Verbal_Interventions.pdf)  (Вербальные интервенции Банка России и структура процентных ставок) http://doi.org/10.31063/2073-6517/2019.16-4.5
 > &nbsp;&nbsp;&nbsp; In the paper, we analyzed data from all informal communications of the Bank of Russia during its transition to an inflation targeting regime, categorizing each communication by topic and tone. This analysis revealed that the transition enhanced the response of the zero-coupon yield curve to communications, with different topics influencing various parts of the curve in distinct ways. Markets are more likely to react to the Governor's communications than to other Board members. Additionally, it was observed that for Deputy Governors, interest rates are mainly influenced by statements on matters directly under their purview at the Bank of Russia. We have also developed a small yet-to-be-published follow-up study in English, which I plan to add here soon.
 
+[//]: This java script is the button to show abstract
+<script>
+ function visib(id) {
+  var x = document.getElementById(id);
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
 
 
