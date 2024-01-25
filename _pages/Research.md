@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Research"
+title: ""
 permalink: /research/
 author_profile: true
 ---
@@ -14,22 +14,25 @@ This paper analyzes the imperative of central banks consistently adhering to the
 
 <br>
 
+<span style="font-size:1.2em;">**2. Understanding Fedspeak with LLM** (coming soon)</span><br>
+
+<br>
+
 Published papers
 ======
 I have three published papers in Russian. Recognizing that their accessibility might be limited, I offer a succinct, shorter-than-abstract summary of each below.
 
 <br>
 
-<span style="font-size:1.2em;">**2. Lombard List formation as a distorting signal of the Bank of Russia (In Russian) (Формирование Ломбардного списка как искажающий сигнал Банка России)**</span> <br>
+<span style="font-size:1.2em;">**3. Lombard List formation as a distorting signal of the Bank of Russia (In Russian) (Формирование Ломбардного списка как искажающий сигнал Банка России)**</span> <br>
 http://doi.org/10.32609/0042-8736-2022-10-37-65 <br>
 [<a href="#/" onclick="visib('Lombard')"><span style="color:#007CBB">Shorter-than-abstract summary</span></a>\] \[[<span style="color:#007CBB">PDF</span>](../files/Oleg_Telegin_Lombard_List.pdf)\]
 <div id="Lombard" style="display: none; text-align: justify; line-height: 1.2" >
 The Bank of Russia regularly and discretionary updates the Lombard List, which includes assets eligible for use as collateral in liquidity provisions to banks. This case study was particularly inspired by the market's reaction to the swift addition of Rosneft bonds in 2014. My findings indicate that when bonds are included in the Lombard List within three weeks of issuance, which occurred in 11 instances over seven years, the market tends to interpret this as positive news about the issuing company, with an average cumulative effect of approximately 0.5%. However, this effect is only observed in cases of rapid inclusion and exhibits varied volatility impacts across different companies. This suggests that the central bank's actions, albeit unintentional, serve as a signal regarding the state of affairs of private companies. Reducing the discretionary nature of the Lombard List updates could mitigate this unintended signaling effect.
 </div>
-
 <br>
 
-<span style="font-size:1.2em;">**3. Bank of Russia regular communications and volatility short-term effects in financial markets (In Russian) (Регулярные коммуникации Банка России и краткосрочные эффекты волатильности на финансовых рынках)**</span> <br>
+<span style="font-size:1.2em;">**4. Bank of Russia regular communications and volatility short-term effects in financial markets (In Russian) (Регулярные коммуникации Банка России и краткосрочные эффекты волатильности на финансовых рынках)**</span> <br>
 http://doi.org/10.31737/2221-2264-2022-54-2-7 <br>
 [<a href="#/" onclick="visib('Vol')"><span style="color:#007CBB">Shorter-than-abstract summary</span></a>\] \[[<span style="color:#007CBB">PDF</span>](../files/Oleg_Telegin_CB_volatility.pdf)\]
 <div id="Vol" style="display: none; text-align: justify; line-height: 1.2" >
@@ -38,7 +41,7 @@ A study examining market volatility on the Bank of Russia Board of Directors mee
 
 <br>
 
-<span style="font-size:1.2em;">**4. Verbal interventions of the Bank of Russia and the interest rate structure, joint with Sergey Merzlyakov (In Russian) (Вербальные интервенции Банка России и структура процентных ставок)**</span> <br>
+<span style="font-size:1.2em;">**5. Verbal interventions of the Bank of Russia and the interest rate structure, joint with Sergey Merzlyakov (In Russian) (Вербальные интервенции Банка России и структура процентных ставок)**</span> <br>
 http://doi.org/10.31063/2073-6517/2019.16-4.5 <br>
 [<a href="#/" onclick="visib('Yield')"><span style="color:#007CBB">Shorter-than-abstract summary</span></a>\] \[[<span style="color:#007CBB">PDF</span>](../files/Telegin_Oleg_Verbal_Interventions.pdf)\]
 <div id="Yield" style="display: none; text-align: justify; line-height: 1.2" >
