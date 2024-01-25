@@ -6,7 +6,7 @@ author_profile: true
 ---
 Work in progress
 ======
-**Always silent? Endogenous central bank communication during the quiet period**<br>
+<span style="font-size:1.5em;">**1. Always silent? Endogenous central bank communication during the quiet period**</span><br>
 [<a href="#/" onclick="visib('Quiet')"><span style="color:#007CBB">Abstract</span></a>\] \[[<span style="color:#007CBB">PDF</span>](../files/OlegTeleginQuietPeriod.pdf)\]
 <div id="Quiet" style="display: none; text-align: justify; line-height: 1.2" >
 This paper analyzes the imperative of central banks consistently adhering to the quiet period policy. The financial market model describes a multifaceted trade--off, wherein the central bank not only gauges the instantaneous market reactions to a quiet period communication but also assesses both the effects of an upcoming Board meeting and changes in market volatility. Consequently, we explore scenarios where proactive communication during the quiet period is deemed necessary. Key determinants for such communication include the willingness to look beyond the immediate consequences of the intervention and the allocation of uncertainty between the central bank's reaction function and the uncertainty associated with the Board meeting dissent. Adopting a collegial approach during the quiet period, effective communication may display distinctive features, such as response asymmetry. The central bank is more reluctant to convey negative news about its economic assessments to the markets. The resolution of uncertainty stemming from such communications can influence the current state of the quiet period with emerging leaks, individual breaches, and unattributed informal communications.
@@ -22,8 +22,12 @@ I have three published papers in Russian. Recognizing that their accessibility m
 <br>
 <br>
 
-[<span style="color:#007CBB">Lombard List formation as a distorting signal of the Bank of Russia (In Russian)</span>](https://olegtelegin.github.io/files/Oleg_Telegin_Lombard_List.pdf) (Формирование Ломбардного списка как искажающий сигнал Банка России) http://doi.org/10.32609/0042-8736-2022-10-37-65
-> &nbsp;&nbsp;&nbsp; The Bank of Russia regularly and discretionary updates the Lombard List, which includes assets eligible for use as collateral in liquidity provisions to banks. This case study was particularly inspired by the market's reaction to the swift addition of Rosneft bonds in 2014. My findings indicate that when bonds are included in the Lombard List within three weeks of issuance, which occurred in 11 instances over seven years, the market tends to interpret this as positive news about the issuing company, with an average cumulative effect of approximately 0.5%. However, this effect is only observed in cases of rapid inclusion and exhibits varied volatility impacts across different companies. This suggests that the central bank's actions, albeit unintentional, serve as a signal regarding the state of affairs of private companies. Reducing the discretionary nature of the Lombard List updates could mitigate this unintended signaling effect.
+<span style="font-size:1.5em;">**2. Lombard List formation as a distorting signal of the Bank of Russia (In Russian) (Формирование Ломбардного списка как искажающий сигнал Банка России)**</span> <br>
+http://doi.org/10.32609/0042-8736-2022-10-37-65 <br>
+[<a href="#/" onclick="visib('Lombard')"><span style="color:#007CBB">Shorter-than-abstract summary</span></a>\] \[[<span style="color:#007CBB">PDF</span>](../files/Oleg_Telegin_Lombard_List.pdf)\]
+<div id="Lombard" style="display: none; text-align: justify; line-height: 1.2" >
+The Bank of Russia regularly and discretionary updates the Lombard List, which includes assets eligible for use as collateral in liquidity provisions to banks. This case study was particularly inspired by the market's reaction to the swift addition of Rosneft bonds in 2014. My findings indicate that when bonds are included in the Lombard List within three weeks of issuance, which occurred in 11 instances over seven years, the market tends to interpret this as positive news about the issuing company, with an average cumulative effect of approximately 0.5%. However, this effect is only observed in cases of rapid inclusion and exhibits varied volatility impacts across different companies. This suggests that the central bank's actions, albeit unintentional, serve as a signal regarding the state of affairs of private companies. Reducing the discretionary nature of the Lombard List updates could mitigate this unintended signaling effect.
+</div>
 
 <br>
 <br>
