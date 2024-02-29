@@ -8,7 +8,7 @@ ssc install project, replace
 project, setup
 * Line to set the current directory to the one with the .do file and data files
 project OlegTeleginDiscontinuityCodeSample, cd
-* Alternatively, you can ignore lines 4-9 and just change line 12 manually to
+* Alternatively, you can ignore lines 5-10 and just change line 13 manually to
 * set cd to the directory containing data files, and run this line alone
 cd "C:\Users\Username\Downloads\Data Task Files"
 * Lines 14-287 can be run altogether. 
